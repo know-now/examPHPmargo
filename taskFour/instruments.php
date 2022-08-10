@@ -30,6 +30,7 @@ if ($conn) {
 </head>
 
 <!-- Displaying instruments  -->
+
 <body>
     <?php foreach ($instruments as $instrument) : ?>
         <div class="container">
@@ -51,14 +52,14 @@ if ($conn) {
                 Description:
             </h3>
 
-            <p><?= $instrument['description']; ?></p>
+            <p><?= substr($instrument['description'], 0, 30) . '...'; ?></p>
         </div>
         <a href="details_instrument.php?id=<?= $instrument['id'] ?>">Detail page</a>
         <hr>
 
     <?php endforeach; ?>
 
-<!-- CSS of the page -->
+    <!-- CSS of the page -->
     <style>
         body {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -74,7 +75,8 @@ if ($conn) {
             flex-direction: row;
             align-items: baseline;
         }
-        h3{
+
+        h3 {
             margin: 10px;
         }
     </style>

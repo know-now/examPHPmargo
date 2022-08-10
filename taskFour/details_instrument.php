@@ -13,7 +13,7 @@ $result = mysqli_query($conn, $query);
 $instrument = mysqli_fetch_assoc($result);
 
 ?>
-
+<!-- HTML of the page -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +24,7 @@ $instrument = mysqli_fetch_assoc($result);
     <title>Music Shop</title>
 
 </head>
-
+<!-- Displaying info about instrument  -->
 <body>
 
     <div class="container">
@@ -50,6 +50,8 @@ $instrument = mysqli_fetch_assoc($result);
     </div>
     <a href="instruments.php">All instruments</a>
 
+     <!-- CSS of the page -->
+     
     <style>
         body {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
