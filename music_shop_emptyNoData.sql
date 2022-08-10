@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 10, 2022 at 02:30 PM
+-- Generation Time: Aug 10, 2022 at 02:44 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -32,7 +32,7 @@ CREATE TABLE `instruments` (
   `name` varchar(255) NOT NULL,
   `brand_name` varchar(255) NOT NULL,
   `price` double NOT NULL,
-  `photo` int(11) NOT NULL,
+  `photo` varchar(255) NOT NULL,
   `type` enum('guitar','drum','bass','turntables') NOT NULL,
   `description` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
